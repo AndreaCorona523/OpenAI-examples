@@ -39,7 +39,21 @@ export class ModerationsComponent {
     this.moderations.postModeration(payload).subscribe((data: any) =>{
       //alert(JSON.stringify(data));
       console.log(data);
-      this.result_hate = data.results[0].categories;
+      this.result_hate = data.results[0].categories["hate"];
+      this.result_hate_score = data.results[0].category_scores["hate"];
+      this.result_hate_threatening = data.results[0].categories["hate/threatening"];
+      this.result_hate_threatening_score = data.results[0].category_scores["hate/threatening"];
+      this.result_self_harm = data.results[0].categories["self-harm"];
+      this.result_self_harm_score = data.results[0].category_scores["self-harm"];
+      this.result_sexual = data.results[0].categories["sexual"];
+      this.result_sexual_score = data.results[0].category_scores["sexual"];
+      this.result_sexual_minors = data.results[0].categories["sexual/minors"];
+      this.result_sexual_minors_score = data.results[0].category_scores["sexual/minors"];
+      this.result_violence = data.results[0].categories["violence"];
+      this.result_violence_score = data.results[0].category_scores["violence"];
+      this.result_violence_graphic = data.results[0].categories["violence/graphic"];
+      this.result_violence_graphic_score = data.results[0].category_scores["violence/graphic"];
+      this.result_flagged = data.results[0].flagged;
       console.log(data.results[0]);
     })
   }

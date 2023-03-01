@@ -16,7 +16,7 @@ export class ModerationsService {
   httOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer <your-key>',
+      'Authorization': 'Bearer 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',
     })
   }
 
