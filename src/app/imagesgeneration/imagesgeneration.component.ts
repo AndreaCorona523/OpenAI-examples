@@ -20,15 +20,14 @@ export class ImagesgenerationComponent {
     var payload =
     {
       prompt: myprompt,
-      n: 2,
-      size: "1024x1024"
+      n: 1,
+      size: "256x256"
     }
 
     this.imagesgeneration.postImagePrompt(payload).subscribe((data: any) =>{
       //alert(JSON.stringify(data));
       console.log(data);
-      this.result = data.url;
-      console.log(data.data);
+      this.result = data.data[0].url;
     })
   }
 

@@ -1,1 +1,25 @@
-<p>moderations works!</p>
+<div>
+    <head>
+        <title>OpenAI Quickstart</title>
+        <link rel="icon" href="/dog.png">
+    </head>
+    <main className=main> 
+        <img src="/assets/speech.png" className=icon width="300px"  height="200px"/>
+        <h3>Check if your text follows our policies</h3>
+        <form>
+            <input 
+            type="text"
+            name="userPrompt"
+            placeholder="Enter an statement to moderate"
+            [(ngModel)]="userPrompt"
+            style="width: 300px;"
+            />
+            <input type="button" value="Moderate" (click)="postEdit()"/>
+
+        </form>
+        <div className=result> {{result}}</div>
+
+    </main>
+
+</div>
+
