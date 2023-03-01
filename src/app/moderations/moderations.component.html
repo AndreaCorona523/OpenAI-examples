@@ -17,7 +17,16 @@
             <input type="button" value="Moderate" (click)="postEdit()"/>
 
         </form>
-        <div className=result> {{result}}</div>
+        <h3>Results</h3>
+        <div className=result> Hate = {{result_hate}} ({{result_hate_score}})</div>
+        <div className=result> Hate/threatening = {{result_hate_threatening}} ({{result_hate_threatening_score}})</div>
+        <div className=result> Self-harm = {{result_self_harm}} ({{result_self_harm_score}})</div>
+        <div className=result> Sexual = {{result_sexual}}({{result_sexual_score}})</div>
+        <div className=result> Sexual Minors = {{result_sexual_minors}} ({{result_sexual_minors_score}})</div>
+        <div className=result> Violence = {{result_violence}} ({{result_violence_score}})</div>
+        <div className=result> Violence Graphic = {{result_violence_graphic}} ({{result_violence_graphic_score}})</div>
+        
+        <div className=result> Flagged: {{result_flagged}}</div>
 
     </main>
 
