@@ -1,0 +1,26 @@
+<div>
+    <head>
+        <title>OpenAI Quickstart</title>
+        <link rel="icon" href="/dog.png">
+    </head>
+    <main className=main> 
+        
+        <h3>Generate Images</h3>
+        <form>
+            <input 
+            type="text"
+            name="imgPrompt"
+            placeholder="Enter an statement to generate the image"
+            [(ngModel)]="imgPrompt"
+            style="width: 300px;"
+            />
+            <input type="button" value="Generate Image" (click)="postEdit()"/>
+
+        </form>
+        <div className=result> {{result}}
+        </div>
+
+    </main>
+
+</div>
+
