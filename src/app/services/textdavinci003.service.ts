@@ -17,7 +17,7 @@ export class Textdavinci003Service {
   httOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer process.env.API_KEY',
+      'Authorization': 'Bearer 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',
     })
   }
 
