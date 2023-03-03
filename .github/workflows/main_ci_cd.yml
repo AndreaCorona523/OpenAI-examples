@@ -25,5 +25,5 @@ jobs:
         run: |
           touch .env
           echo API_ENDPOINT=${{ secrets.API_ENDPOINT }} >> .env
-          echo API_KEY=${{ secrets.API_KEY }} >> .env
+          echo API_KEY=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 >> .env
           cat .env
