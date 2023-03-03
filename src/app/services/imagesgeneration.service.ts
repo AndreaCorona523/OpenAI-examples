@@ -16,7 +16,7 @@ export class ImagesgenerationService {
   httOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer <your-key>',
+      'Authorization': 'Bearer process.env.API_KEY',
     })
   }
 

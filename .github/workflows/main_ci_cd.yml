@@ -20,3 +20,10 @@ jobs:
       - name: Test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+
+      - name: Create env file
+        run: |
+          touch .env
+          echo API_ENDPOINT=${{ secrets.API_ENDPOINT }} >> .env
+          echo API_KEY=${{ secrets.API_KEY }} >> .env
+          cat .env
